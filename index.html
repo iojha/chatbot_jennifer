@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+	<title>JavaScript Week 1 Lesson</title>
+
+
+	<!--CSS -->
+	<link rel="stylesheet" href="css/jennifer.css">
+
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+
+	<!-- jQuery library -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+	<!-- Latest compiled JavaScript -->
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+		//test jQuery add id="h01"
+		function myFunction() {
+
+			$("#h01").html("Hello jQuery")
+		}
+
+		$(document).ready(myFunction);
+
+	</script>
+
+
+	<!--BLS -->
+
+
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="row">
+
+			<!--see js/script_001.js -->
+
+			<div id="mainstage"></div>
+			<div class="col-sm-6 ">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<span class="glyphicon glyphicon-comment"> </span> Hi I am Jennifer!
+
+						<div class="panel-body">
+
+							<div class="well">
+
+								<div id="textreceiver" class="textreceiver"> Jennifer is awake, it is: <span id="thedate"></span>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-footer">
+					<div class="input-group">
+
+						<input type="text" class="form-control speak" id="sendtext" />
+						<span class="input-group-btn">
+        <button type="submit" id="btnSearch" class="btn btn-success" onclick="SendText()"
+                >SAY</button>
+        
+        </span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--js-->
+	<script src="js/jennifer.js"></script>
+
+</body>
+
+</html>
